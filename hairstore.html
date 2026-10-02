@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haircare Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-color: #f3f3f3;
+      font-family: sans-serif;
+    }
+
+    .banner{
+      background-color: #bebee2;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .banner h1{
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .produk img{
+      height: 220px;
+      object-fit: cover;
+    }
+
+    footer{
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <div class="container ">
+      <a href="#" class="navbar-brand">Haircare Store</a>
+    </div>
+  </nav>
+
+  <section class="banner">
+    <h1>Rawat Rambutmu Setiap Hari</h1>
+    <p>Haircare Store adalah toko produk perawatan rambut yang menyediakan berbagai produk berkualitas untuk membantu menjaga kesehatan dan keindahan rambut setiap hari Produk haircare pilihan untuk menjaga rambut tetap sehat dan harum.</p>
+  </section>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Produk Haircare</h2>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card produk">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8PsZwaAywp8ELSL22icccbLAXQ1Xt_HjSA&s" alt="shampoo herbal">
+          <div class="card-body">
+
+            <h5> Shampo Herbal</h5>
+            <p>Dengan kandungan alami yang membantu membersihkan rambut secara menyeluruh, menjaga kesehatan kulit kepala, dan memperkuat akar rambut</p>
+            <h6>Rp 50.000</h6>
+
+            <button class="btn btn-success mt-2" onclick="beliProduk()">Beli Produk</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+      <div class="card produk">
+          <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" alt="hair serum">
+          <div class="card-body">
+
+            <h5>Hair Serum</h5>
+            <p>Membantu menjaga kelembutan rambut, mengurangi rambut kusut, serta membuat rambut lebih mudah diatur dan tampak lebih bercahaya setiap hari.</p>
+            <h6>Rp 75.000</h6>
+
+            <button class="btn btn-success mt-2" onclick="beliProduk()">Beli Produk</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccn4RZIKJrHU-WCvDcD_T7uSmcA_DmGPuWw&s" alt="hair mask">
+          <div class="card-body">
+            <h5>Hair Mask</h5>
+            <p>Merawat rambut rusak dan kering. Membantu menutrisi rambut secara mendalam sehingga rambut terasa lebih halus, lembut, dan sehat.</p>
+            <h6>Rp 65.000</h6>
+
+            <button class="btn btn-success mt-2" onclick="beliProduk()">Beli Produk</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <div class="container">
+      <h2 class="mb-4">Testimoni Pelanggan:</h2>
+
+        <div class="col-md-6 mb-3">
+          <div class="card p-3">
+            <b>- Novi</b>
+            <p>"Setelah pakai produk ini rambutku jadi lebih lembut dan halus."</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card p-3">
+            <b>- Rani</b>
+            <p>"Aku pake hair mask-nya Wanginya enak dan cocok buat rambutku yg ngembang."</p>
+          </div>
+        </div>
+    </div>
+
+<div class="container">
+  <div class="card p-3">
+    <h2>pesanan</h2>
+        <span>Produk:</span>
+        <input type="text" name="produk" id="produk" placeholder="Masukkan produk"><br> <br>
+        <span>Jumlah produk:</span>
+        <input type="text" name="jumlah produk" id="jumlah produk" placeholder="Masukkan jumlah"><br> <br>
+         <button class="btn btn-success" onclick="beliProduk()">Kirim pesanan</button>
+  </div>
+ </div>
+
+  <footer>
+    <p>©2026 Haircare Store</p>
+    <p>Instagram : haircare@instagram.com</p>
+  </footer>
+
+  <script>
+    function beliProduk(){
+      alert("Pesanan berhasil dibuat");
+
+    document.getElementById("produk").value = "";
+    document.getElementById("jumlah produk").value = "";
+    }
+  </script>
+</body>
+</html>
